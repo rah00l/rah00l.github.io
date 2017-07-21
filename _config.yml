@@ -10,7 +10,7 @@ relative_permalinks: false
 title:            Short Notes
 tagline:          'Ruby on rails'
 
-description:      'Hi, I am Rahul Patil & this is my software development blog.'
+description:      'Mostly web development'
 url:              http://hyde.getpoole.com
 baseurl:          /
 
