@@ -11,8 +11,8 @@ title:            Short Notes
 tagline:          'Ruby on rails'
 
 description:      'Mostly web development'
-url:              http://hyde.getpoole.com
-baseurl:          /
+url:              https://rah00l.github.io
+baseurl:          ''
 
 author:
   name:           'Mark Otto'
