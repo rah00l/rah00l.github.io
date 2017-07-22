@@ -4,7 +4,7 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: false
+# relative_permalinks: true
 
 # Setup
 title:            Short Notes
@@ -12,7 +12,7 @@ tagline:          'Ruby on rails'
 
 description:      'Mostly web development'
 url:              https://rah00l.github.io
-baseurl:          ''
+baseurl:          /
 
 author:
   name:           'Mark Otto'
@@ -22,6 +22,5 @@ paginate:         5
 
 # Custom vars
 version:          0.0.1
-
 # github:
 #   repo:           https://github.com/poole/hyde
