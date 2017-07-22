@@ -12,7 +12,7 @@ tagline:          'Ruby on rails'
 
 description:      'Mostly web development'
 url:              https://rah00l.github.io
-baseurl:          /
+baseurl:          ''
 
 author:
   name:           'Mark Otto'
