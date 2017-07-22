@@ -3,14 +3,12 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  "Dream is not that which you see while sleeping it is something that does not let you sleep." .....A.P.J. Abdul Kalam
-</p>
+>Dream is not that which you see while sleeping it is something that does not let you sleep. .....**A. P. J.  Abdul Kalam**
 
-Hi, I'm Rahul Patil, living in Pune (India). I've been developing for the web since 2010,
-moving from writting small ruby programs, static HTML to Ruby on Rails. This is my software development blog.
-In my blog, <a href="http://rah00l.github.io" target="_blank">Short Notes</a>, I show how
-simple & short quick pointers will help you while developing software application.
+<br>
+<p>Hi, I'm Rahul Patil, living in Pune (India). I've been developing for the web since 2010,
+moving from writting small ruby programs, static HTML to **Ruby on Rails.** This is my software development blog.
+In my blog, <a href="{{ site.url }}"> {{ site.title }} </a>, I show how simple & short quick pointers will help you while developing software application.</p>
 
 <!-- In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
