@@ -8,7 +8,7 @@ permalink:        pretty
 
 # Setup
 title:            Short Notes
-tagline:          'Ruby on rails'
+tagline:          'on web development'
 
 description:      'Mostly web development'
 url:              https://rah00l.github.io
@@ -22,5 +22,5 @@ paginate:         1
 
 # Custom vars
 version:          0.0.1
-# github:
-#   repo:           https://github.com/poole/hyde
+github:
+  repo:           https://github.com/rah00l
