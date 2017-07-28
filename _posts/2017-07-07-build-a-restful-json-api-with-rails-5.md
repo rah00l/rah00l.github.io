@@ -575,7 +575,7 @@ Let's have some manual testing.
 
 	rails s
 
-Let's go ahead and make requests to the API. I'll be using httpie as my HTTP client.
+Let's go ahead and make requests to the API. I'll be using `httpie` as my HTTP client.
 
 	POST /consumers(.:format)  consumers#create
 	http POST :3000/consumers first_name=Aarmbh last_name=Pal
