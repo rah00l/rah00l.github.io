@@ -13,12 +13,13 @@ tagline:          'on web development'
 description:      'Mostly web development'
 url:              https://rah00l.github.io
 # baseurl:          ''
+excerpt_separator: "\n\n"
 
 author:
   name:           'Mark Otto'
   url:            https://twitter.com/mdo
 
-paginate:         1
+paginate:         5
 
 # Custom vars
 version:          0.0.1
