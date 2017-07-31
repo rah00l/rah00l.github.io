@@ -42,8 +42,3 @@ It opens a GUI that steps you through each conflict, and you get to choose how t
 Then you can easily push your changes to remote branch.
 
 	git push origin current_branch
-
-
-***
-
-*Thanks for reading!*

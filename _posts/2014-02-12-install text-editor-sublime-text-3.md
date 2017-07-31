@@ -27,8 +27,5 @@ categories: installation
 
 	Or you just double clicked on it and Ubuntu Software Center installed it.
 
-***
-
 We have covered about how to install sublime-text-3 on Ubuntu.
 
-*Thanks for reading!*

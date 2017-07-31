@@ -64,6 +64,3 @@ end
 - The STI results in more code.It is confusing to some programmers to understand relation between STI classes.
 - The polymorphic association is very easy to implement.
 
-***
-
-*Thanks for reading!*

@@ -140,8 +140,4 @@ Then install java
 
 	sudo apt-get install default-jdk
 
-***
-
 We have covered the basics of how to set up a Ruby on Rails development environment on Ubuntu.
-
-*Thanks for reading!*

@@ -967,5 +967,3 @@ Here we have covered following points:
 * Setup `RSpec` testing framework with `Factory Girl`, `Database Cleaner`, `Shoulda Matchers` and `Faker`.
 * Build models and controllers with `TDD (Test Driven Development)`.
 * Make HTTP requests to an API with `httpie`.
-
-*Thanks for reading!*

@@ -12,7 +12,3 @@ Here is the script,
 {% gist d8e2cc726f701c73dc73e37853b7b01b remove_failed_jobs.rb %}
 
 With the help of this code we can very eassily remove failed custom resque job.
-
-***
-
-*Thanks for reading!*

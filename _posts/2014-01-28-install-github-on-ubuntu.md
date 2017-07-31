@@ -48,8 +48,4 @@ git config --global user.name "firstname lastname"
 git config --global user.email "example@gmail.com"
 {% endhighlight %}
 
-***
-
 We have covered about how to install github a distributed version control system on Ubuntu.
-
-*Thanks for reading!*

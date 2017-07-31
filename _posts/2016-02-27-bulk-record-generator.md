@@ -16,7 +16,3 @@ Following script is usefull to generate bulk amount of db records for `Book` mod
 {% gist 3610ef1aa18b587bcd34 bulk_record_generator.rb %}
 
 With the help of this code we can very eassily generate bulk amount of records.
-
-***
-
-*Thanks for reading!*

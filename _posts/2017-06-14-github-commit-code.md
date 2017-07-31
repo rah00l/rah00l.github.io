@@ -30,7 +30,3 @@ The following mapping shows the scores available:
 Here is the a ruby program to fetch the commit score for a user on Github.
 
 {% gist a953a88fa7e06e10dd3e24773409ba5e github_user_commit_scores.rb %}
-
-***
-
-*Thanks for reading!*

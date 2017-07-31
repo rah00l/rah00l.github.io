@@ -66,6 +66,3 @@ end
 proc_test # calling proc_test prints nothing
 {% endhighlight %}
 
-***
-
-*Thanks for reading!*
