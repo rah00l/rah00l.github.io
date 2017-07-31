@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Setting up a Ruby on Rails development environment on Ubuntu
+tags: [rails, github, sublime ]
+categories: installation
 ---
 
 We will be setting up a Ruby on Rails development environment on Ubuntu.

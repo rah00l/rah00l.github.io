@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Build A Restful JSON Api With Rails 5
+tags: [rails, json-api]
+categories: web
 ---
 
 Today, we are going to disscuss about **building a Restful API solution with rails 5** to get all transactions for a specifc consumer and or for a merchant. There should be three endpoints one for each dataset / table.

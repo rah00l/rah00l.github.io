@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Difference between Procs and Lambdas
+tags: [ruby ]
+categories: scripting-language
 ---
 
 It is important to mention that they are **both Proc objects**.
