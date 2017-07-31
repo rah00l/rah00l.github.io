@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
->Dream is not that which you see while sleeping it is something that does not let you sleep. .....**A. P. J.  Abdul Kalam**
+>*"Dream is not that which you see while sleeping it is something that does not let you sleep"*......***A. P. J. Abdul Kalam***
 
 <br>
 <p>Hi, I'm Rahul Patil, living in Pune (India). I've been developing for the web since 2010,
