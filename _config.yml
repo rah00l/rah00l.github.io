@@ -5,6 +5,11 @@ highlighter:      pygments
 # Permalinks
 permalink:        pretty
 # relative_permalinks: true
+Tags: '/tags/'
+tag_page: '/tags/'
+
+Categories: '/categories/'
+category_page: '/categories/'
 
 # Setup
 title:            Short Notes
