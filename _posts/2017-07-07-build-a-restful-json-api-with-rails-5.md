@@ -290,7 +290,7 @@ end
 
 Run the tests again
 
-<img src="{{ site.url }}/public/restfull_api_testsuit_ran1.png" />
+<img src="{{ site.url }}/public/images/restfull_api_testsuit_ran1.png" />
 
 All Green!
 
@@ -571,7 +571,7 @@ end
 
 Run the tests and everything's all green!
 
-<img src="{{ site.url }}/public/restfull_api_testsuit_ran2.png" />
+<img src="{{ site.url }}/public/images/restfull_api_testsuit_ran2.png" />
 
 Let's have some manual testing.
 
@@ -582,7 +582,7 @@ Let's go ahead and make requests to the API. I'll be using `httpie` as my HTTP c
 	POST /consumers(.:format)  consumers#create
 	http POST :3000/consumers first_name=Aarmbh last_name=Pal
 
-<img src="{{ site.url }}/public/consumers-2.png" />
+<img src="{{ site.url }}/public/images/consumers-2.png" />
 
 	consumers GET /consumers(.:format)		consumers#index
 	http :3000/consumers
@@ -590,7 +590,7 @@ Let's go ahead and make requests to the API. I'll be using `httpie` as my HTTP c
 	PUT /consumers/:id(.:format) consumers#update
 	http PUT :3000/consumers/3 first_name=Ananya
 
-<img src="{{ site.url }}/public/consumers-1.png" />
+<img src="{{ site.url }}/public/images/consumers-1.png" />
 
 **Merchant API**
 
@@ -719,24 +719,24 @@ Go ahead and re-define them in `config/routes.rb`.
 	end
 {% endhighlight %}
 
-<img src="{{ site.url }}/public/restfull_api_testsuit_ran3.png" />
+<img src="{{ site.url }}/public/images/restfull_api_testsuit_ran3.png" />
 
 Run some manual tests for the `merchants API`:
 
 	merchants GET /merchants(.:format)	merchants#index
 	http :3000/merchants
 
-<img src="{{ site.url }}/public/merchant-1.png" />
+<img src="{{ site.url }}/public/images/merchant-1.png" />
 
 	POST /merchants(.:format)		merchants#create
 	http POST :3000/merchants name=merchant_name domain=domain_name
 
-<img src="{{ site.url }}/public/merchant-2.png" />
+<img src="{{ site.url }}/public/images/merchant-2.png" />
 
 	PUT /merchants/:id(.:format) merchants#update
 	http PUT :3000/merchants/4 name="PVR Cinemas"
 
-<img src="{{ site.url }}/public/merchant-3.png" />
+<img src="{{ site.url }}/public/images/merchant-3.png" />
 
 **Transactions API**
 
@@ -923,19 +923,19 @@ end
 
 
 
-<img src="{{ site.url }}/public/restfull_api_testsuit_ran4.png" />
+<img src="{{ site.url }}/public/images/restfull_api_testsuit_ran4.png" />
 
 Run some manual tests for the `transactions API`:
 
 	consumer_transactions GET /consumers/:consumer_id/transactions(.:format)  transactions#index
 	http :3000/consumers/1/transactions
 
-<img src="{{ site.url }}/public/transact1.png" />
+<img src="{{ site.url }}/public/images/transact1.png" />
 
 	merchant_transactions GET /merchants/:merchant_id/transactions(.:format)  transactions#index
 	http :3000/merchants/1/transactions
 
-<img src="{{ site.url }}/public/transact2.png" />
+<img src="{{ site.url }}/public/images/transact2.png" />
 
 	POST /consumers/:consumer_id/transactions(.:format)		transactions#create
 	http POST :300/consumers/1/transactions merchant_id=1 sale_amount=111 date=2017/04/11
@@ -943,21 +943,21 @@ Run some manual tests for the `transactions API`:
 	POST /marchants/:merchant_id/transactions(.:format)		transactions#create
 	http POST :3000/merchants/1/transactions consumer_id=1 sale_amount=222	date=2017/04/22
 
-<img src="{{ site.url }}/public/transact3.png" />
+<img src="{{ site.url }}/public/images/transact3.png" />
 
 	PUT /consumers/:consumer_id/transactions/:id(.:format) transactions#update
 	http PUT :3000/consumers/1/transactions/1 sale_amount=444
 
-<img src="{{ site.url }}/public/transact4.png" />
+<img src="{{ site.url }}/public/images/transact4.png" />
 
 	PUT /merchants/:merchant_id/transactions/:id(.:format) transactions#update
 	http PUT :3000/merchants/1/transactions/1 sale_amount=555
 
-<img src="{{ site.url }}/public/transact5.png" />
+<img src="{{ site.url }}/public/images/transact5.png" />
 
 	http POST /marchants/:merchant_id/transactions with invalid merchant id 100
 
-<img src="{{ site.url }}/public/transact6.png" />
+<img src="{{ site.url }}/public/images/transact6.png" />
 
 ***
 
