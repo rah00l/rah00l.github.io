@@ -21,6 +21,14 @@ branch.
 
 If you `git merge` it into feature1, it will combine the tasks of feature2 into feature1 by creating a `single new commit` "b" at the tip of feature1.
 
+{% highlight sh %}
+on feature1 branch>git checkout feature2
+.................... make the development
+.................... add commits
+................... >git checkout feature1
+................... >git merge feature2
+{% endhighlight %}
+
 <img src="{{ site.url }}/public/images/git-merge.png" />
 
 **"Git Merge is much like taking two threads and tying them up in a knot."**
@@ -28,6 +36,16 @@ If you `git merge` it into feature1, it will combine the tasks of feature2 into 
 
 ### Git Rebase:
 Git rebase will place the entire commit history of the feature2 branch on the tip of feature1. It means that your entire feature2 branch will be reattached to the tip of feature1 and it will look like a linear sequence of commits.
+
+{% highlight sh %}
+on feature1 branch>git checkout feature2
+.................... make the development
+.................... add commits
+................... >git checkout feature1
+................... >git rebase origin/feature2
+{% endhighlight %}
+
+
 
 <img src="{{ site.url }}/public/images/git-rebase.png" />
 
