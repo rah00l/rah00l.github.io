@@ -104,6 +104,10 @@ You should also uncheck the `"Build pull requests"` option, otherwise any pull r
 
 <img src="{{ site.url }}/public/images/travis_ci_setting.png" />
 
+Once all configurations were done correctly, a commit push after enabling Travis, and it will catch the event and trigger your indexing for you.
+
+<img src="{{ site.url }}/public/images/travis_ci_build.png" />
+
 After implementation of **`Algolia Jekyll Plugin'**, the search functionality will look like,
 
 <img src="{{ site.url }}/public/images/test_alogolia_search.png" />
