@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setup Algolia
-tags: [algolia]
+tags: [algolia, jekyll]
 categories: Setup, Jekyll
 ---
 
