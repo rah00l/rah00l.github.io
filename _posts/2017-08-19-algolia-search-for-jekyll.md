@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Algolia search for Jekyll
-tags: [jekyll, github-pages, algolia]
-categories: Jekyll, Travis-CI
+tags: [Jekyll, Github-pages, Algolia, Travis-CI]
+categories: Development
 ---
 
 **Algolia** is the most reliable platform for building search into your business.

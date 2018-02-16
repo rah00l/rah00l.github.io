@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Difference between Git Pull vs Rebase
-tags: [github ]
-categories:
+tags: [Github ]
+categories: Github
 ---
 
 ### Git Pull: `git pull = git fetch + git merge`

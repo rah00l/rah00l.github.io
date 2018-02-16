@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Git Merge and Rebase
-tags: [github ]
-categories:
+tags: [Github ]
+categories: Github
 ---
 
 >Merge and Rebase are two strategies available in Git to combine two ( or more) branches into one branch.

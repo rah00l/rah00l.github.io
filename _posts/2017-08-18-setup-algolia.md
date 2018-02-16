@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Setup Algolia
-tags: [algolia, jekyll]
-categories: Setup, Jekyll
+tags: [Algolia, Jekyll]
+categories: Installation
 ---
 
 **Algolia** offering a web search product through a SaaS (software as a service) model. A powerful hosted search engine API, Algolia provides product teams with the resources & tools they need to create fast, relevant search.

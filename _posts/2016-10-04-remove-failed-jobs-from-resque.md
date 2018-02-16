@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Remove failed jobs from resque
-tags: [rails, resque ]
-categories: web
+tags: [Rails, Resque ]
+categories: Development
 ---
 
 Lets know how to remove failed or errors from `SampleJob (a custom job)` without affecting other Jobs.

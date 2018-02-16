@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby programs
-tags: [ruby, program]
+tags: [Ruby, Program]
 categories: Ruby
 ---
 

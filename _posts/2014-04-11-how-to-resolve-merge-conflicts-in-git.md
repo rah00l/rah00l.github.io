@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How to resolve merge-conflicts in git
-tags: [github ]
-categories:
+tags: [Github ]
+categories: Github
 ---
 
 

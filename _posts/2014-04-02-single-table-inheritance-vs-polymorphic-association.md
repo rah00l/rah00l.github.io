@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Single-table inheritance vs Polymorphic association
-tags: [rails ]
-categories: web
+tags: [Rails]
+categories: Development
 ---
 
 This is a common to have join between two tables based on condition. Suppose we have table in database

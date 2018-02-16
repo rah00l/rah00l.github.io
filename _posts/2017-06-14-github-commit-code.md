@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Ruby code to fetch commit score for user on github
-tags: [ruby, github ]
-categories: scripting-language
+tags: [Ruby, Github ]
+categories: Scripting-language
 ---
 
 The API endpoint to fetch the activities for a user on Github is as follow:

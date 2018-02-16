@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Install github version control systems on ubuntu
-tags: [github]
-categories: installation
+tags: [Github]
+categories: Installation
 ---
 
 **Github** is a distributed version control system.

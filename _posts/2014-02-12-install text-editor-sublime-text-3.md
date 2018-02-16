@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Install text editor sublime-text-3
-tags: [sublime]
-categories: installation
+tags: [Sublime]
+categories: Installation
 ---
 
 **Sublime Text** is a sophisticated text editor for code, markup and prose.

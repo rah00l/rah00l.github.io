@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Ruby Class vs Module
-tags: [ruby ]
-categories: scripting-language
+tags: [Ruby ]
+categories: Scripting-language
 ---
 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Rails Generate 1 Million Records in 20 minutes
-tags: [rails, activeRecord ]
-categories: database
+tags: [Rails, ActiveRecord ]
+categories: Database
 ---
 
 I love ActiveRecord. It does so many things so well. Hiding horribly verbose SQL queries behind concise, readable ruby; magically knowing that the foreign key for `has_many :media` is `medium_id`; replacing  garbage like **“PG::UniqueViolation: ERROR: duplicate key value violates unique constraint ‘index_users_on_email’”** with the perfectly end-user-readable `“Email address has already been taken”`; 

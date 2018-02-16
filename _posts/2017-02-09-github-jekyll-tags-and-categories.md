@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Jekyll Tags and Categories on Github Pages
-tags: [jekyll, github-pages]
-categories: web
+tags: [Jekyll, Github-pages]
+categories: Development
 ---
 
 It is **true** that Github pages do not support customized Ruby plugins for Jekyll site.
