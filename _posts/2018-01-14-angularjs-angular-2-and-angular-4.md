@@ -35,7 +35,7 @@ Google has released following versions of Angular,
 Let us disscuss differences between them,
 
 ### `AngularJS vs Angular 2`
-* Angular 2 is not simple upgrade from Angular 1
+* Angular 2 is not simple to upgrade from Angular 1
 * Angular 2 is completely rewritten from the ground up.
 * Angular 2 is 5 times faster compared to AngularJS.
 * AngularJS was not built for mobile devices, where Angular 2on the other hand is designed from the ground up with mobile support in mind.
