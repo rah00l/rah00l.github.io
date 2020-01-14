@@ -24,7 +24,7 @@ author:
   name:           'Mark Otto'
   url:            https://twitter.com/mdo
 
-paginate:         5
+paginate:         10
 
 # Custom vars
 version:          0.0.1
@@ -33,5 +33,3 @@ github:
 
 github_username:  rah00l
 linkedin_username: rahul-patil-5a317822
-
-theme: jekyll-theme-cayman
