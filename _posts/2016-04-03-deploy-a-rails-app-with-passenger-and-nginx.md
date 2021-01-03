@@ -2,7 +2,7 @@
 layout: post
 title: Deploy a Rails App with Passenger and Nginx
 tags: [Passenger, Nginx]
-categories: Development
+categories: Deployment
 ---
 
 <img src="{{ site.url }}/public/images/nginx-passenger-for-rails.jpg"/>
