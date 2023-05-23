@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Manage multiple GitHub accounts on a single machine">
+  <meta property="og:description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+  <meta property="og:image" content="https://i.imgur.com/uyDNQnn.jpg">
+
+  <title>Manage multiple GitHub accounts on a single machine</title>
+  <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/portfolYOU/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/portfolYOU/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/portfolYOU/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/portfolYOU/"><h5><b>portfolYOU</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link " href="/portfolYOU/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/portfolYOU/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/portfolYOU/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Manage multiple GitHub accounts on a single machine</b></h1>
+
+<p class="post-metadata text-muted">
+  11 March 2018 -  
+  <b>4 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#github">
+      <span class="tag badge badge-pill text-primary border border-primary">Github</span>
+    </a>
+    </p>
+
+<p>Most developers work life needs to manage multiple GitHub accounts on the same machine. Also, It could simply be a desire to have separate GitHub accounts for work-related projects and personal projects.</p>
+
+<p><img src="/portfolYOU/public/images/manage-multiple-gitHub-accounts.png"></p>
+
+<p>Let’s talk, How to manage multiple Github accounts from one computer?</p>
+
+<h3 id="manage-multiple-github-accounts-on-a-single-machine-with-ssh-keys">Manage multiple GitHub accounts on a single machine with SSH keys</h3>
+
+<h4 id="contents">Contents:</h4>
+<ul>
+  <li>Set up SSH Keys</li>
+  <li>Add SSH keys to GitHub account</li>
+  <li>Create configuration files to manage keys</li>
+  <li>Update stored identities</li>
+  <li>Test PUSH to new repo</li>
+  <li>Test PUSH to existing repo</li>
+</ul>
+
+<p>What you need?</p>
+
+<ul>
+  <li>Two active GitHub accounts</li>
+  <li>A Unix based machine</li>
+  <li>Some knowledge of working with the terminal</li>
+</ul>
+
+<h4 id="set-up-ssh-keys">Set up SSH Keys:</h4>
+<p>Open your computer terminal. Proceed and follow the steps below to create and save two separate keys.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/.ssh
+<span class="gp">$</span><span class="w"> </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"rahulpatil2387@gmail.com"</span>
+<span class="gp">  #</span><span class="w"> </span>save as id_rsa_personal
+<span class="gp">$</span><span class="w"> </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"rahul.patil@office.com"</span>
+<span class="gp">  #</span><span class="w"> </span>save as id_rsa_work
+</code></pre></div></div>
+
+<p>Running the above commands will create four (4) files in the .ssh directory in your local machine:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">id_rsa_personal</span>
+<span class="nx">id_rsa_personal</span><span class="p">.</span><span class="nx">pub</span>
+<span class="nx">id_rsa_work</span>
+<span class="nx">id_rsa_work</span><span class="p">.</span><span class="nx">pub</span>
+</code></pre></div></div>
+
+<p>The files with the .pub extension are the public files that you would add to your GitHub account.</p>
+
+<h4 id="add-ssh-keys-to-github-account">Add SSH keys to GitHub account:</h4>
+
+<p>Copy one of the keys you created, say, the personal key by running the command below:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>pbcopy &lt; ~/.ssh/id_rsa_personal.pub
+</code></pre></div></div>
+<p>Log in and follow the steps below to add the newly created key to your GitHub account.</p>
+
+<ul>
+  <li>Go to Settings under your Github account,</li>
+  <li>Click on the SSH and GPG keys link</li>
+  <li>Click on the green New SSH key button</li>
+  <li>Add a title to identify the key you are about to paste</li>
+  <li>Paste the personal key in the key input field provided. Click on Add SSH key and confirm your GitHub password when prompted.</li>
+</ul>
+
+<p>Go through the same steps to add your work SSH key.</p>
+
+<p>Create configuration files to manage keys</p>
+
+<p>Go back to the .ssh folder in your terminal and create a configuration file for your keys using the command below:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">touch </span>config
+</code></pre></div></div>
+
+<p>Open and edit the file using nano/vim. nano: <code class="language-plaintext highlighter-rouge">$ nano config</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #github work account
+Host work
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_rsa_work
+
+ #github personal account
+Host personal
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_rsa_personal
+</code></pre></div></div>
+
+<p>Save and exit.</p>
+
+<h4 id="update-stored-identities">Update stored identities:</h4>
+
+<p>Clear currently stored identities:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ssh-add <span class="nt">-D</span>
+</code></pre></div></div>
+
+<p>Add new keys:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ssh-add id_rsa_personal
+<span class="go">Identity added: id_rsa_personal (id_rsa_personal)
+</span></code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ssh-add id_rsa_work
+<span class="go">Identity added: id_rsa_work (id_rsa_work)
+</span></code></pre></div></div>
+
+<p>Test to make sure new keys are stored:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ssh-add <span class="nt">-l</span>
+<span class="go">2048 SHA256:xBxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx id_rsa_personal (RSA)
+2048 SHA256:wXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx id_rsa_work (RSA)
+</span></code></pre></div></div>
+
+<p>Test to make sure Github recognizes the keys:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ssh <span class="nt">-T</span> personal
+<span class="go">Hi rah00l! You've successfully authenticated, but GitHub does not provide shell access.
+</span></code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ssh <span class="nt">-T</span> work
+<span class="go">Hi rahul-work! You've successfully authenticated, but GitHub does not provide shell access.
+</span></code></pre></div></div>
+
+<h4 id="test-push-with-new-repo">Test PUSH with new repo:</h4>
+<p>On Github, create a new repo in your personal account, called test-personal.</p>
+
+<p>Back on your local machine, create a test directory:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/documents
+<span class="gp">$</span><span class="w"> </span><span class="nb">mkdir </span>test-personal
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd </span>test-personal
+</code></pre></div></div>
+<p>Just to add a blank “readme.md” file and PUSH to Github:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">touch </span>readme.md
+<span class="gp">$</span><span class="w"> </span>git init
+<span class="gp">$</span><span class="w"> </span>git add <span class="nb">.</span>
+<span class="gp">$</span><span class="w"> </span>git commit <span class="nt">-am</span> <span class="s2">"first commit"</span>
+<span class="gp">$</span><span class="w"> </span>git remote add origin git@personal:rah00l/test-personal.git
+<span class="gp">$</span><span class="w"> </span>git push origin master
+</code></pre></div></div>
+<blockquote>
+  <p>Notice how we’re using the custom account, <em>git@personal</em>, instead of <em>git@github.com</em>.</p>
+</blockquote>
+
+<h4 id="test-push-with-existing-repo">Test PUSH with existing repo:</h4>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">cd ~/your project
+</span></code></pre></div></div>
+<p>Modify a pre-existing repository,</p>
+
+<p>To switch a pre-existing repository to use SSH instead of HTTPS, you can change the remote url within your .git/config file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    -url = https://github.com/rah00l/rah00l.github.io.git
+    +url = git@personal:rah00l/rah00l.github.io.git
+</code></pre></div></div>
+<p>A shortcut is to use the set-url command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git remote set-url origin git@personal:rah00l/rah00l.github.io.git
+</code></pre></div></div>
+<p>Now push and test at your personal account.</p>
+
+<p>Repeat the process for your githubWork account.</p>
+
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Rahul Patil</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+<a class="social mx-1" href="https://www.behance.net/your_username" style="color: #6c757d" onmouseover="this.style.color='#1769ff'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1" href="mailto:username@domain.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.facebook.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.github.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/your_username" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@your_username" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.twitter.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div>
+<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
