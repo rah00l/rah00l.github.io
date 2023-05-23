@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Algolia search for Jekyll">
+  <meta property="og:description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+  <meta property="og:image" content="https://i.imgur.com/uyDNQnn.jpg">
+
+  <title>Algolia search for Jekyll</title>
+  <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/portfolYOU/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/portfolYOU/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/portfolYOU/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/portfolYOU/"><h5><b>portfolYOU</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link " href="/portfolYOU/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/portfolYOU/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/portfolYOU/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Algolia search for Jekyll</b></h1>
+
+<p class="post-metadata text-muted">
+  19 August 2017 -  
+  <b>3 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#jekyll">
+      <span class="tag badge badge-pill text-primary border border-primary">Jekyll</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#github-pages">
+      <span class="tag badge badge-pill text-primary border border-primary">Github-pages</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#algolia">
+      <span class="tag badge badge-pill text-primary border border-primary">Algolia</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#travis-ci">
+      <span class="tag badge badge-pill text-primary border border-primary">Travis-CI</span>
+    </a>
+    </p>
+
+<p><strong>Algolia</strong> is the most reliable platform for building search into your business.</p>
+
+<h3 id="algolia-jekyll-plugin">Algolia Jekyll Plugin</h3>
+
+<p>Jekyll plugin to automatically index your Jekyll posts and pages into an Algolia index by simply running <code class="language-plaintext highlighter-rouge">jekyll algolia push</code>.</p>
+
+<h3 id="installation---setup-algolia">Installation - [Setup Algolia]</h3>
+<ul>
+  <li>Sign up for an <a href="https://www.algolia.com/users/sign_up">Algolia account</a>.</li>
+  <li>Create a new index for your Jekyll site</li>
+  <li>Go to API Keys and take note of your Application ID, Search-Only API Key and Admin API Key</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">algoliasearch-jekyll</code> to the jekyll_plugins group in your Gemfile:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'algoliasearch-jekyll'</span>
+<span class="k">end</span></code></pre></figure>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle install</code>
+</li>
+  <li>Add your algolia Application ID and index name to <code class="language-plaintext highlighter-rouge">_config.yml</code>:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"># Algolia configuration
+algolia:
+  application_id: 'RVEDS43WIH'
+  index_name: 'short_notes'
+  read_only_api_key: 'caxxxxxxxxxxxxxxxxxxxxxxxxxxxxdb'
+  excluded_files:
+    - 404.html
+    - index.html</code></pre></figure>
+
+<h3 id="configuration">Configuration#</h3>
+
+<p>Refer this <a href="https://github.com/rah00l/rah00l.github.io/commit/1da9f710387b76ad22509966d797b1fac08f96cc">code commit</a> to understand how to implement algolia search in your Jekyll application,</p>
+
+<h3 id="usage">Usage</h3>
+
+<p>To generate an index and push it to Algolia you can use the <code class="language-plaintext highlighter-rouge">push command</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">bundle exec jekyll algolia push</code></p>
+
+<ul>
+  <li>Set your key as an environment variable <code class="language-plaintext highlighter-rouge">ALGOLIA_API_KEY</code> or in a file called <code class="language-plaintext highlighter-rouge">_algolia_api_key</code>. If you use the file method make sure it’s not checked into a public repository otherwise anyone could add content to your search. For the environment variable you can simply prefix the command with it, for example:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">ALGOLIA_API_KEY='YOUR KEY' bundle exec jekyll algolia push</code></p>
+
+<p><img src="/portfolYOU/public/images/algolia_index_generation.png"></p>
+
+<p>Here <code class="language-plaintext highlighter-rouge">ALGOLIA_API_KEY</code> is <strong>Admin API Key</strong> in order to generate and push indices.</p>
+
+<p>Following is the screen-shot of <code class="language-plaintext highlighter-rouge">pushed indices at Algolia</code>,</p>
+
+<p><img src="/portfolYOU/public/images/algolia_indices.png"></p>
+
+<p>Note that your API key should have write access to both the <code class="language-plaintext highlighter-rouge">index_name</code> and <code class="language-plaintext highlighter-rouge">_tmp</code> suffixed version of it (eg. <code class="language-plaintext highlighter-rouge">your_index_name</code> and <code class="language-plaintext highlighter-rouge">your_index_name_tmp</code>) in the previous example). This is due to the way we do atomic pushes by pushing to a temporary index and then renaming it. The easiest way is to create a key with access to in the <code class="language-plaintext highlighter-rouge">index_name*</code> index (note the <code class="language-plaintext highlighter-rouge">* suffix</code>).</p>
+
+<h3 id="github-pages">GitHub Pages</h3>
+
+<p>GitHub does not allow custom plugins to be run on GitHub Pages. This means that you’ll either have to run bundle exec jekyll algolia push manually, or configure TravisCI to do it for you.</p>
+
+<p>Travis CI is an hosted continuous integration service,</p>
+
+<p>For it to work, you’ll have 3 steps to perform.</p>
+
+<ul>
+  <li><strong>Create a .travis.yml file</strong></li>
+</ul>
+
+<p>Create a file named .travis.yml at the root of your project, with the following content:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>language: ruby
+cache: bundler
+branches:
+  only:
+    - master
+script: 
+  - bundle exec jekyll algolia push
+rvm:
+ - 2.2
+</code></pre></div></div>
+<p>This file will be read by Travis and instruct it to fetch all dependencies defined in the Gemfile, then run jekyll algolia push. This will only be triggered when data is pushed to the gh-pages branch.</p>
+
+<ul>
+  <li><strong>Update your _config.yml file to exclude vendor</strong></li>
+</ul>
+
+<p>Travis will download all you Gemfile dependencies into a directory named vendor. You have to tell Jekyll to ignore this directory, otherwise Jekyll will try to parse it (and fail).</p>
+
+<p>Doing so is easy, just add the following line to your _config.yml file:</p>
+
+<p><code class="language-plaintext highlighter-rouge">exclude: [vendor]</code></p>
+
+<ul>
+  <li><strong>Configure Travis</strong></li>
+</ul>
+
+<p>In order for Travis to be able to push data to your index on your behalf, you have to give it your write API Key. This is achieved by defining an <code class="language-plaintext highlighter-rouge">ALGOLIA_API_KEY</code> environment variable in Travis settings.</p>
+
+<p>Sign in <a href="https://travis-ci.org/"><strong>Travis CI</strong></a> in order to set environment variable,</p>
+
+<p><img src="/portfolYOU/public/images/travis_ci_login.png"></p>
+
+<p>You should also uncheck the <code class="language-plaintext highlighter-rouge">"Build pull requests"</code> option, otherwise any pull request targeting master will trigger the reindexing.</p>
+
+<p><img src="/portfolYOU/public/images/travis_ci_setting.png"></p>
+
+<p>Once all configurations were done correctly, a commit push after enabling Travis, and it will catch the event and trigger your indexing for you.</p>
+
+<p><img src="/portfolYOU/public/images/travis_ci_build.png"></p>
+
+<p>After implementation of <strong>`Algolia Jekyll Plugin’</strong>, the search functionality will look like,</p>
+
+<p><img src="/portfolYOU/public/images/test_alogolia_search.png"></p>
+
+
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Rahul Patil</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+<a class="social mx-1" href="https://www.behance.net/your_username" style="color: #6c757d" onmouseover="this.style.color='#1769ff'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1" href="mailto:username@domain.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.facebook.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.github.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/your_username" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@your_username" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.twitter.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div>
+<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
