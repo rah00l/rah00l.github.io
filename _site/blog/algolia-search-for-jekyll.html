@@ -28,10 +28,10 @@
   <title>Algolia search for Jekyll</title>
   <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
 
-  <link rel="shortcut icon" type="image/x-icon" href="/portfolYOU/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
   <!-- Theme style -->
-  <script src="/portfolYOU/assets/js/theme.js"></script>
+  <script src="/assets/js/theme.js"></script>
 
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/portfolYOU/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 
@@ -52,7 +52,7 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/portfolYOU/"><h5><b>CodeWave</b></h5></a>
+  <a class="navbar-brand" href="/"><h5><b>CodeWave</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
@@ -60,11 +60,11 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-<a class="nav-item nav-link " href="/portfolYOU/projects/">Projects</a>
+<a class="nav-item nav-link " href="/projects/">Projects</a>
 
-      <a class="nav-item nav-link active" href="/portfolYOU/blog/">Blog</a>
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
 
-      <a class="nav-item nav-link " href="/portfolYOU/about/">About</a>
+      <a class="nav-item nav-link " href="/about/">About</a>
 
       
 
@@ -82,19 +82,19 @@
 
   <br>Tags: 
     
-    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#jekyll">
+    <a class="text-decoration-none no-underline" href="/blog/tags#jekyll">
       <span class="tag badge badge-pill text-primary border border-primary">Jekyll</span>
     </a>
     
-    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#github-pages">
+    <a class="text-decoration-none no-underline" href="/blog/tags#github-pages">
       <span class="tag badge badge-pill text-primary border border-primary">Github-pages</span>
     </a>
     
-    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#algolia">
+    <a class="text-decoration-none no-underline" href="/blog/tags#algolia">
       <span class="tag badge badge-pill text-primary border border-primary">Algolia</span>
     </a>
     
-    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#travis-ci">
+    <a class="text-decoration-none no-underline" href="/blog/tags#travis-ci">
       <span class="tag badge badge-pill text-primary border border-primary">Travis-CI</span>
     </a>
     </p>
@@ -148,13 +148,13 @@ algolia:
 
 <p><code class="language-plaintext highlighter-rouge">ALGOLIA_API_KEY='YOUR KEY' bundle exec jekyll algolia push</code></p>
 
-<p><img src="/portfolYOU/public/images/algolia_index_generation.png"></p>
+<p><img src="/public/images/algolia_index_generation.png"></p>
 
 <p>Here <code class="language-plaintext highlighter-rouge">ALGOLIA_API_KEY</code> is <strong>Admin API Key</strong> in order to generate and push indices.</p>
 
 <p>Following is the screen-shot of <code class="language-plaintext highlighter-rouge">pushed indices at Algolia</code>,</p>
 
-<p><img src="/portfolYOU/public/images/algolia_indices.png"></p>
+<p><img src="/public/images/algolia_indices.png"></p>
 
 <p>Note that your API key should have write access to both the <code class="language-plaintext highlighter-rouge">index_name</code> and <code class="language-plaintext highlighter-rouge">_tmp</code> suffixed version of it (eg. <code class="language-plaintext highlighter-rouge">your_index_name</code> and <code class="language-plaintext highlighter-rouge">your_index_name_tmp</code>) in the previous example). This is due to the way we do atomic pushes by pushing to a temporary index and then renaming it. The easiest way is to create a key with access to in the <code class="language-plaintext highlighter-rouge">index_name*</code> index (note the <code class="language-plaintext highlighter-rouge">* suffix</code>).</p>
 
@@ -202,20 +202,19 @@ rvm:
 
 <p>Sign in <a href="https://travis-ci.org/"><strong>Travis CI</strong></a> in order to set environment variable,</p>
 
-<p><img src="/portfolYOU/public/images/travis_ci_login.png"></p>
+<p><img src="/public/images/travis_ci_login.png"></p>
 
 <p>You should also uncheck the <code class="language-plaintext highlighter-rouge">"Build pull requests"</code> option, otherwise any pull request targeting master will trigger the reindexing.</p>
 
-<p><img src="/portfolYOU/public/images/travis_ci_setting.png"></p>
+<p><img src="/public/images/travis_ci_setting.png"></p>
 
 <p>Once all configurations were done correctly, a commit push after enabling Travis, and it will catch the event and trigger your indexing for you.</p>
 
-<p><img src="/portfolYOU/public/images/travis_ci_build.png"></p>
+<p><img src="/public/images/travis_ci_build.png"></p>
 
 <p>After implementation of <strong>`Algolia Jekyll Plugin’</strong>, the search functionality will look like,</p>
 
-<p><img src="/portfolYOU/public/images/test_alogolia_search.png"></p>
-
+<p><img src="/public/images/test_alogolia_search.png"></p>
 
 
 

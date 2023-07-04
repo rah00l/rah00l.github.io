@@ -111,7 +111,3 @@ Once all configurations were done correctly, a commit push after enabling Travis
 After implementation of **`Algolia Jekyll Plugin'**, the search functionality will look like,
 
 <img src="{{ site.baseurl }}/public/images/test_alogolia_search.png" />
-
-
-
-
