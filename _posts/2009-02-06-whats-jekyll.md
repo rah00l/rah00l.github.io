@@ -1,9 +1,8 @@
 ---
-title: GitHub Flow
-tags: [GitHub, Workflow]
-style: fill
-color: primary
-description: GitHub Flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. This guide explains how and why GitHub Flow works.
+title: What's Jekyll?
+tags: [Jekyll, Github-pages]
+categories: Development
+description: Jekyll • Simple, blog-aware, static sites | Transform your plain text into static websites and blogs.
 ---
 
 [Jekyll](http://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
