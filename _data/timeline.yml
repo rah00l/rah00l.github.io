@@ -1,17 +1,15 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Student, DYPCOET (IT)
+  from: 2004
+  to: 2008
+  description: D. Y. Patil College of Engineering & Technology, 
+               Kolhapur is a self-financing Autonomous Institute 
+               established in 1984 under the leadership of Padmashree Dr. D. Y. Patil. 
+               It has Autonomous status since 2020 and is approved by AICTE, 
+               affiliated to Shivaji University. Accredited by NAAC with 'A' grade (CGPA-3.08).
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Student, Vivekand College (H.S.C)
+  from: 2003
+  to: 2004
+  description: Shri Swami Vivekanand Shikshan Sanstha's Vivekanand College, 
+               Kolhapur is an autonomous college affiliated with Shivaji University, 
+               Kolhapur. It offers a diverse range of undergraduate and postgraduate programs.
