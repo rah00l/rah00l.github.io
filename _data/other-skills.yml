@@ -1,7 +1,7 @@
-- name: Adobe Photoshop
+- name: Database Concepts
   percentage: 95
-  color: info
+  color: success
 
-- name: Adobe Illustrator
+- name: TDD/BDD
   percentage: 90
   color: success
