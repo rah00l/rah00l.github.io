@@ -1,11 +1,16 @@
 ### Site Settings ###
 title               : CodeWave
+# "PrismCraft" fits the criteria you mentioned. It is catchy, relevant to your Full Stack Developer profile, and starts with the letter 'P'. Additionally, it conveys a sense of creativity and craftsmanship, which aligns well with your journey starting from small Ruby programs and static HTML to delving deeper into Ruby on Rails. "PrismCraft" captures the essence of working with diverse technologies and crafting elegant solutions in the realm of full-stack development.
+# Riding the CodeWave,
+                      # Fueling with coffee :coffee:,
+                      # Tabs my rhythm, spaces my flow,
+                      # Unleashing code without breaking the show.
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
+                      Fueling with coffee :coffee: , 
+                      riding the rhythm of tabs, 
+                      unleashing flawless code.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : rah00l/rah00l.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -68,7 +73,7 @@ disqus:
 
 ### Analytics ###
 analytics:
-  enabled: false                                        # Set true to enable analytics
+  enabled: true                                        # Set true to enable analytics
   google:
     tracking_id: your-google-tracking-id
 
