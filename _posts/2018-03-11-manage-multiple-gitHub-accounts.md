@@ -3,6 +3,8 @@ layout: post
 title: Manage multiple GitHub accounts on a single machine
 tags: [Github]
 categories: Github
+style: fill
+color: secondary
 ---
 
 Most developers work life needs to manage multiple GitHub accounts on the same machine. Also, It could simply be a desire to have separate GitHub accounts for work-related projects and personal projects.

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Crafting a Well-Structured HTML Page A Guide for Developers
+title: Crafting a    A Guide for Developers
 tags: [HTML]
+style: fill
+color: warning
 categories: HTML
 ---
 
