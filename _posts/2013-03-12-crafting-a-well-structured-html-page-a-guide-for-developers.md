@@ -2,8 +2,8 @@
 layout: post
 title: Crafting a    A Guide for Developers
 tags: [HTML]
-style: fill
-color: warning
+style: border
+color: danger
 categories: HTML
 ---
 
