@@ -3,10 +3,11 @@ layout: post
 title: Ruby Class vs Module
 tags: [Ruby ]
 categories: Scripting-language
+style: fill
+color: danger
+description: Ruby modules allow you to create groups of methods that you can then include or mix into any number of classes. `Modules only hold behaviour, unlike classes, which hold both behaviour and state.`
 ---
 
-
-Ruby modules allow you to create groups of methods that you can then include or mix into any number of classes. `Modules only hold behaviour, unlike classes, which hold both behaviour and state.`
 
 Since a module cannot be instantiated, there is no way for its methods to be called directly. Instead, it should be included in another class, which makes its methods available for use in instances of that class.
 

@@ -3,6 +3,8 @@ layout: post
 title: Installing Git on Ubuntu A Quick Guide
 tags: [Github]
 categories: Installation
+style: fill
+color: secondary
 ---
 
 GitHub is a powerful distributed version control system that enables efficient collaboration on software development projects. To get started with Git on Ubuntu, follow these simple steps:

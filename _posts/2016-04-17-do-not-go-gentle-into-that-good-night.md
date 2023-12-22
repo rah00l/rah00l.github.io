@@ -2,7 +2,7 @@
 title: Do not go gentle into that good night
 tags: [Poetry]
 style: fill
-color: light
+color: gray
 description: 
 ---
 
