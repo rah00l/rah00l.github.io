@@ -1,16 +1,42 @@
-<div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Your Page Title</title> -->
+  
+  <!-- Include Google Analytics code if configured -->
+  {% if site.analytics.enabled and site.analytics.google.tracking_id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <!-- <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s"> -->
-        <img src="{{ site.baseurl }}/public/1-f.png" class="circle-image wow animated zoomIn" data-wow-delay=".1s" />
+    gtag('config', '{{ site.analytics.google.tracking_id }}');
+  </script>
+  {% endif %}
+  
+  <!-- Your other meta tags, CSS links, and other head content go here -->
+  
+</head>
+<body>
+  <!-- Your HTML body content goes here -->
+  <div class="row justify-content-center align-items-center p-4">
+    <div class="col-lg-4 col-md-6 text-center mt-4">
+
+      <!-- Fine Circle Responsive Image -->
+      <div id="container" class="my-2">
+        <div id="dummy"></div>
+        <div id="element">
+          <!-- <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s"> -->
+          <img src="{{ site.baseurl }}/public/1-f.png" class="circle-image wow animated zoomIn" data-wow-delay=".1s" />
+        </div>
       </div>
+
+      <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+
     </div>
-
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
-
   </div>
-</div>
+</body>
+</html>
