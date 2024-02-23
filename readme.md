@@ -20,8 +20,8 @@ This blogging site serves as a platform for me to express my thoughts, share kno
 
 ## Contact Information
 
-- **Email**: [Your Email Address](mailto:rahulpatil2387@gmail.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/rahulpatil2387)
+- **Email**: [Email Address](mailto:rahulpatil2387@gmail.com)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/rahulpatil2387)
 
 
 ## Contributing
