@@ -1,6 +1,6 @@
-# Personal Blogging Site: [CodeWave](https://rah00l.github.io/)
+# [CodeWave](https://rah00l.github.io/)
 
-Welcome to my personal blogging site! Here, I share articles, projects, and personal reflections on various topics.
+Welcome to my **personal blogging site!** Here, I share articles, projects, and personal reflections on various topics.
 
 ## Overview
 
@@ -20,17 +20,13 @@ This blogging site serves as a platform for me to express my thoughts, share kno
 
 ## Contact Information
 
-- **Email**: [Your Email Address](mailto:your.email@example.com)
+- **Email**: [Your Email Address](mailto:rahulpatil2387@gmail.com)
 - **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/rahulpatil2387)
 
 
 ## Contributing
 
 If you're interested in contributing to this blog, please follow the guidelines outlined in the [Contributing Guidelines](CONTRIBUTING.md).
-
-## Contact
-
-Have questions or feedback? Feel free to [contact me](mailto:your.email@example.com) or connect with me on [Twitter](https://twitter.com/yourhandle).
 
 ## License
 
@@ -41,10 +37,12 @@ This project is licensed under the [MIT License](LICENSE).
 - Thanks to GitHub for hosting my blog for free.
 - Special thanks to [Jekyll](https://jekyllrb.com/) for powering the blog's static site generator.
 
-
 ---
 
 _Thank you for visiting my blog! I hope you enjoy reading my content and find it valuable._
 
 
-Visit my blogging site:[CodeWave](https://rah00l.github.io/)
+Visit my blogging site: [CodeWave](https://rah00l.github.io/)
+
+
+
