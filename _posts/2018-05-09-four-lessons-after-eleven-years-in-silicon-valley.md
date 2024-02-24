@@ -3,7 +3,7 @@ title: 4 Lessons After 11 Years in Silicon Valley
 tags: 
 description: On the realities of opportunity, success, reputation, and relationships in tech.
 style: border
-color: primary
+color: success
 ---
 
 Source: [Ashley Mayer](https://medium.com/s/story/four-lessons-after-eleven-years-in-silicon-valley-d87507b7a4f6)
