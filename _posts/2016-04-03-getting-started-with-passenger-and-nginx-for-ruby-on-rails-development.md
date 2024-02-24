@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Passenger and Nginx for Ruby on Rails Development
 tags: [Ubuntu, Rails, Nginx]
-style: fill
+style: border
 color: danger
 description: We'll explore how to set up and configure Passenger with Nginx, providing you with a straightforward and efficient solution for deploying your web apps.
 ---

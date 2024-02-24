@@ -2,6 +2,8 @@
 title: A better Hello World
 tags: [Software Development]
 description: A different “hello world” to demonstrate language features better.
+color: success
+style: border
 ---
 
 Source: [RICO STA. CRUZ](https://ricostacruz.com/til/a-better-hello-world)

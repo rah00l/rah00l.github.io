@@ -3,7 +3,7 @@ title: Clean Coding
 tags: [Software Development, Clean Code]
 description: These four “clean code” tips will dramatically improve your engineering team’s productivity
 style: border
-color: primary
+color: success
 ---
 
 Source: [Jonathan Fulton](https://engineering.videoblocks.com/these-four-clean-code-tips-will-dramatically-improve-your-engineering-teams-productivity-b5bd121dd150)
