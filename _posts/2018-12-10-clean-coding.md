@@ -1,6 +1,6 @@
 ---
 title: Clean Coding
-tags: [Software Development, Clean Code]
+tags: [Software Development, Clean Code, LastMinutePrep]
 description: These four “clean code” tips will dramatically improve your engineering team’s productivity
 style: border
 color: success

@@ -1,8 +1,8 @@
 ---
 title: Building a Legacy Ruby Environment with Docker Challenges & Solutions
-tags: [Docker, Ruby, Legacy Systems]
-style: border
-color: warning
+tags: [Docker, Ruby, Legacy Systems, LastMinutePrep]
+style: fill
+color: primary
 description: Learn how to use Docker to build and manage legacy Ruby environments for older applications. Discover the challenges and solutions when dealing with outdated dependencies and system packages.
 ---
 <br/>

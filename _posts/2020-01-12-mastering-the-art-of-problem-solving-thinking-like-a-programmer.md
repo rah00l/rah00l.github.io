@@ -1,6 +1,6 @@
 ---
 title: Mastering the Art of Problem-Solving - Thinking Like a Programmer
-tags: [Software Development, Programming, Problem Solving]
+tags: [Software Development, Programming, Problem Solving, LastMinutePrep]
 style: border
 color: success
 description: Learn effective problem-solving techniques to think like a programmer and excel in software development.

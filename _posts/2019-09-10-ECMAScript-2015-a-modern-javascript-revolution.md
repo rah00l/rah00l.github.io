@@ -1,6 +1,6 @@
 ---
 title: ECMAScript 2015 A Modern JavaScript Revolution
-tags: [JavaScript, Web Development]
+tags: [JavaScript, Web Development, LastMinutePrep]
 style: fill
 color: warning
 description: Exploring ECMAScript 6 (ES6) / ECMAScript 2015 A Modern JavaScript Revolution.

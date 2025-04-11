@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Delegates in Rails with simple example
-tags: [Ruby ]
+tags: [Ruby, LastMinutePrep]
 categories: Rails
 style: fill
 color: danger

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails routes
-tags: [Ruby ]
+tags: [Ruby, LastMinutePrep]
 categories: Rails
 style: fill
 color: danger

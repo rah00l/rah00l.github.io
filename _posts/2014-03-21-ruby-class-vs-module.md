@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby Class vs Module
-tags: [Ruby ]
+tags: [Ruby, LastMinutePrep]
 categories: Scripting-language
 style: fill
 color: danger
