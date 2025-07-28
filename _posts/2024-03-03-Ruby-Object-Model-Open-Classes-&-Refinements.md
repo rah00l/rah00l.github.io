@@ -1,6 +1,6 @@
 ---
 title: Ruby Object Model Open Classes & Refinements
-tags: [Ruby, OpenClasses, Refinements, QuickNotes]
+tags: [Ruby, OpenClasses, Refinements, ruby-core-lab, QuickNotes]
 style: border
 color: danger
 description: Ruby’s power lies in its open object model — where classes can be reopened and modified at runtime — making it incredibly flexible for metaprogramming and DSLs.
