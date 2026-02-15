@@ -12,4 +12,4 @@ _includes/_site
 _site/
 .jekyll-cache/
 .sass-cache/
-vendor/
+vendor/.env
