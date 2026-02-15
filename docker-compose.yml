@@ -1,0 +1,35 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:4
+    # The official image doesn't ship an arm64 variant; run under amd64 emulation on Apple Silicon:
+    platform: linux/amd64
+    working_dir: /srv/jekyll
+    volumes:
+      - .:/srv/jekyll
+      # Cache gems so 'bundle install' doesn't redo everything each time:
+      - bundle_cache:/usr/gem
+    ports:
+      - "4000:4000"
+      - "35729:35729"   # optional: livereload
+    environment:
+      JEKYLL_ENV: development
+      # Token(s) to avoid GitHub API 429 if the metadata plugin is active:
+      JEKYLL_GITHUB_TOKEN: ${JEKYLL_GITHUB_TOKEN}
+      GITHUB_TOKEN: ${JEKYLL_GITHUB_TOKEN}
+      # Helps jekyll-github-metadata resolve the repo with fewer lookups (harmless if plugin is disabled):
+      PAGES_REPO_NWO: rah00l/rah00l.github.io
+    # Run bundle install every start, then exec the server (array form + shell to chain commands)
+    command:
+      [
+        "sh","-lc",
+        "bundle config set path '/usr/gem' \
+         && bundle install \
+         && exec bundle exec jekyll serve \
+            --host 0.0.0.0 \
+            --port 4000 \
+            --livereload --watch --force_polling \
+            --config _config.yml,_config.local.yml"
+      ]
+
+volumes:
+  bundle_cache:

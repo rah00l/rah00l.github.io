@@ -1,0 +1,4 @@
+# _config.local.yml
+plugins:
+  - jekyll-feed
+# IMPORTANT: Do NOT list "jekyll-github-metadata" here.

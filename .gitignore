@@ -7,3 +7,9 @@
 
 /_site
 _includes/_site
+
+
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/
