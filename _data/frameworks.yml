@@ -1,0 +1,19 @@
+- name: Ruby on Rails
+  percentage: 95
+  color: danger
+
+- name: React
+  percentage: 70
+  color: info
+
+- name: Angular (1.x + 2+)
+  percentage: 60
+  color: secondary
+
+- name: jQuery
+  percentage: 85
+  color: info
+
+- name: Bootstrap
+  percentage: 80
+  color: info

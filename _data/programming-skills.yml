@@ -1,16 +1,19 @@
-- name: Ruby on Rails
+- name: Ruby
   percentage: 95
   color: danger
 
-- name: JavaScript/jQuery/AJAX
+- name: JavaScript
   percentage: 85
   color: info
 
-- name: HTML5/CSS3
-  percentage: 80
-  color: info  
+- name: SQL
+  percentage: 90
+  color: success
 
-- name: React/Angular 1/2
-  percentage: 60
+- name: Python
+  percentage: 70
   color: secondary
 
+- name: Mod Perl
+  percentage: 60
+  color: secondary

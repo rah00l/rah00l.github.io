@@ -1,0 +1,23 @@
+- name: Docker
+  percentage: 80
+  color: info
+
+- name: AWS (EC2, S3)
+  percentage: 70
+  color: success
+
+- name: Apache / Nginx / Passenger
+  percentage: 85
+  color: info
+
+- name: Reverse Proxy / Mod Proxy
+  percentage: 75
+  color: secondary
+
+- name: Jenkins / Travis CI / Circle CI
+  percentage: 70
+  color: secondary
+
+- name: Linux (Ubuntu / Red Hat)
+  percentage: 90
+  color: success

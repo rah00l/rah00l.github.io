@@ -6,14 +6,29 @@ weight: 3
 ---
 
 # **About Me**
-Greetings! My name is **{{ site.author.name }}** :wave: and I am currently residing in Pune, India. With a web development experience that dates back to 2010, my journey started with small Ruby programs and static HTML and eventually, I delved deeper into Ruby on Rails.
+Hello! I'm {{ site.author.name }}, a technology enthusiast and software development professional based in Pune, India. My journey in the world of code began back in 2010—with simple Ruby scripts and static HTML pages—and evolved into building full‑fledged web applications using Ruby on Rails.
 
-I welcome you to my blog, which serves as a platform for me to share my knowledge and insights on software development. Through Short Notes, I aspire to provide a valuable resource to the community by sharing my learnings and experiences.
+Over the years, I’ve shaped myself into a developer who values clarity, craftsmanship, and continuous learning. My interests span across software architecture, developer tooling, productivity systems, and building reliable, maintainable applications.
+This blog—Short Notes—is my space to share insights, practical learnings, and reflections from my everyday work. My goal is simple:
+to create content that helps fellow developers gain clarity faster than I did.
 
-Thank you for taking the time to read about me, and I look forward to connecting with you through my blog.
+Thank you for stopping by. I look forward to connecting, sharing ideas, and growing together through this platform.
+
+**Currently exploring:** system design, distributed architecture, developer productivity, Docker workflows, and high‑level design thinking.
+
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+{% include about/skills.html title="Frameworks & Libraries" source=site.data.frameworks %}
+</div>
+
+<div class="row">
+{% include about/skills.html title="Web & Frontend Technologies" source=site.data.frontend %}
+{% include about/skills.html title="Databases" source=site.data.database %}
+</div>
+
+<div class="row">
+{% include about/skills.html title="DevOps, Deployment & Infra" source=site.data.devops %}
+{% include about/skills.html title="Tools" source=site.data.tooling %}
 </div>
 
 <div class="row">

@@ -1,0 +1,19 @@
+- name: Git
+  percentage: 95
+  color: danger
+
+- name: Jira / Trello / Redmine
+  percentage: 85
+  color: info
+
+- name: Sublime Text / VS Code
+  percentage: 80
+  color: info
+
+- name: Google Analytics / Search Console
+  percentage: 80
+  color: secondary
+
+- name: New Relic
+  percentage: 75
+  color: secondary

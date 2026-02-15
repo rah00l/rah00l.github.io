@@ -1,0 +1,11 @@
+- name: MySQL
+  percentage: 90
+  color: success
+
+- name: PostgreSQL
+  percentage: 85
+  color: success
+
+- name: MongoDB
+  percentage: 70
+  color: secondary

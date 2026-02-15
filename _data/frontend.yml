@@ -1,0 +1,7 @@
+- name: HTML5/CSS3
+  percentage: 85
+  color: info
+
+- name: AJAX
+  percentage: 80
+  color: secondary
