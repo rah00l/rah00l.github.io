@@ -2,7 +2,7 @@
 title: "How Structured, OOP, and Functional Thinking Shape Real‑World Rails Apps"
 description: "A practical, developer‑friendly exploration of how Structured, Object‑Oriented, and Functional thinking come together inside real‑world Rails applications—shaping workflows, domain design, and data transformation in ways that align naturally with Clean Architecture principles."
 date: 2025-11-20
-tags: [ruby, rails, clean-architecture, programming-paradigms, system-design, craftsmanship]
+tags: [ruby, rails, CleanArchitecture, programming-paradigms, system-design, craftsmanship]
 layout: post
 style: border
 color: info
