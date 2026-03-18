@@ -13,3 +13,6 @@ _site/
 .jekyll-cache/
 .sass-cache/
 vendor/.env
+.env
+
+.DS_Store
